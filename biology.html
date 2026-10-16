@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Biology — learn about living organisms, cells, photosynthesis, the human body, and biodiversity. Science Explorer.">
+    <title>Biology — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html" class="active">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Biology hero">
+            <div class="page-hero-bg"
+                style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.f6shLtlvbbafSW60-aSFYgHaEK?r=0&w=1000&h=563&rs=1&pid=ImgDetMain&o=7&rm=3'); background-color:#050d1a;">
+            </div>
+            <div class="page-hero-overlay"
+                style="background: linear-gradient(135deg, rgba(5,20,15,0.92) 0%, rgba(5,13,26,0.6) 100%);"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label" style="color: var(--color-turquoise);">Science Subject</span>
+                    <h1>Biology: The Science<br><span style="color: var(--color-turquoise);">of Life</span></h1>
+                    <p class="hero-sub">Biology is the study of living organisms — humans, animals, plants, and
+                        microorganisms — and their interactions with the environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section" aria-labelledby="bio-intro">
+            <div class="container">
+                <div class="intro-block">
+                    <span class="section-label">Introduction</span>
+                    <h2 class="section-title" id="bio-intro">What is Biology?</h2>
+                    <p>Biology explores the living world in all its complexity. From the tiniest bacteria to the largest
+                        whale, from rainforests to the human immune system, biology helps us understand what it means to
+                        be alive.</p>
+                    <p>By studying biology, we learn how bodies work, how species evolve, how ecosystems are maintained,
+                        and how we can protect the biodiversity that sustains all life on Earth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CELL SECTION -->
+        <section class="section-alt" aria-labelledby="cell-title">
+            <div class="container">
+                <span class="section-label">Cells</span>
+                <h2 class="section-title" id="cell-title">The Cell — Basic Unit of Life</h2>
+                <p class="section-subtitle">The cell is the basic structural and functional unit of all living
+                    organisms. There are two major types of cells.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px;">
+                    <!-- Plant Cell info -->
+                    <div class="feature-card" style="text-align:left;">
+                        <div style="font-size:2rem; margin-bottom:12px;" aria-hidden="true">🌿</div>
+                        <h4 style="color:var(--color-turquoise); font-size:1.1rem; margin-bottom:10px;">Plant Cells</h4>
+                        <p style="font-size:0.875rem; color:var(--color-text-muted);">Plant cells have a rigid cell
+                            wall, chloroplasts for photosynthesis, and a large central vacuole for storing water and
+                            nutrients.</p>
+                    </div>
+                    <!-- Animal Cell info -->
+                    <div class="feature-card" style="text-align:left;">
+                        <div style="font-size:2rem; margin-bottom:12px;" aria-hidden="true">🐾</div>
+                        <h4 style="color:var(--color-violet-lt); font-size:1.1rem; margin-bottom:10px;">Animal Cells
+                        </h4>
+                        <p style="font-size:0.875rem; color:var(--color-text-muted);">Animal cells lack a cell wall and
+                            chloroplasts. They have a flexible cell membrane and smaller vacuoles.</p>
+                    </div>
+                </div>
+
+                <!-- Plant Cell Diagram Image -->
+                <div style="background: var(--color-bg-3); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: 32px; margin-bottom: 40px;"
+                    aria-label="Labelled diagram of a plant cell">
+                    <h3 style="text-align:center; margin-bottom: 24px; color: var(--color-turquoise);">Plant Cell —
+                        Diagram</h3>
+                    <img src="https://p.turbosquid.com/ts-thumb/vI/hiYJ0s/ManHfsOy/plantcellwithtext/jpg/1568842726/1920x1080/fit_q87/345b1eea14b3c23a1317374c25cd2d6d2d61c5f8/plantcellwithtext.jpg"
+                        alt="Labelled diagram of a plant cell showing nucleus, chloroplast, vacuole, cell wall, mitochondria and other organelles"
+                        style="width:100%; max-width:860px; display:block; margin:0 auto; border-radius: var(--radius-sm); border: 1px solid rgba(0,184,169,0.25);"
+                        loading="lazy">
+                    <p style="text-align:center; color:var(--color-text-muted); font-size:0.8rem; margin-top:16px;">
+                        Labelled plant cell diagram showing key organelles and their positions</p>
+                </div>
+
+                <!-- Cell Parts Table -->
+                <h3 style="color:var(--color-heading); margin-bottom:20px; font-size:1.2rem;">Important Cell Parts and
+                    Their Functions</h3>
+                <div class="table-wrap">
+                    <table class="data-table" aria-label="Table of cell parts and their functions">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cell Part</th>
+                                <th scope="col">Function</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nucleus</td>
+                                <td>Controls all cell activities and contains the genetic material (DNA)</td>
+                            </tr>
+                            <tr>
+                                <td>Cell Membrane</td>
+                                <td>Controls the movement of substances in and out of the cell</td>
+                            </tr>
+                            <tr>
+                                <td>Cytoplasm</td>
+                                <td>Jelly-like fluid that fills the cell; site of many chemical reactions</td>
+                            </tr>
+                            <tr>
+                                <td>Mitochondria</td>
+                                <td>Releases energy from food through respiration (the "powerhouse" of the cell)</td>
+                            </tr>
+                            <tr>
+                                <td>Ribosomes</td>
+                                <td>Help manufacture proteins that the cell needs to function</td>
+                            </tr>
+                            <tr>
+                                <td>Chloroplast</td>
+                                <td>Carries out photosynthesis in plant cells; contains green chlorophyll</td>
+                            </tr>
+                            <tr>
+                                <td>Vacuole</td>
+                                <td>Stores water, nutrients, and waste products within the cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTOSYNTHESIS -->
+        <section class="section" aria-labelledby="photo-title">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-img">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
+                            alt="Sunlight shining through green leaves — photosynthesis in action" loading="lazy">
+                    </div>
+                    <div class="split-text">
+                        <span class="section-label" style="color: var(--color-turquoise);">Plants</span>
+                        <h2 id="photo-title">Photosynthesis</h2>
+                        <p>Photosynthesis is the remarkable process by which green plants use sunlight to produce their
+                            own food. It is the foundation of almost all food chains on Earth.</p>
+
+                        <div
+                            style="background: rgba(0,184,169,0.08); border: 1px solid rgba(0,184,169,0.25); border-radius: var(--radius-sm); padding: 20px; margin: 20px 0;">
+                            <p
+                                style="font-size:0.875rem; color:var(--color-text-muted); margin-bottom:8px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; font-size:0.7rem;">
+                                The Process Uses:</p>
+                            <ul
+                                style="list-style:disc; padding-left:20px; color:var(--color-text); display:flex; flex-direction:column; gap:6px; font-size:0.9rem;">
+                                <li><strong style="color:var(--color-heading);">Sunlight</strong> — energy source from
+                                    the Sun</li>
+                                <li><strong style="color:var(--color-heading);">Carbon Dioxide (CO₂)</strong> — absorbed
+                                    through tiny pores in leaves</li>
+                                <li><strong style="color:var(--color-heading);">Water (H₂O)</strong> — absorbed through
+                                    the roots</li>
+                                <li><strong style="color:var(--color-heading);">Chlorophyll</strong> — the green pigment
+                                    that captures light</li>
+                            </ul>
+                        </div>
+
+                        <p><strong style="color:var(--color-turquoise);">Output:</strong> The process produces glucose
+                            (food) and releases <strong style="color:var(--color-heading);">oxygen</strong> — the gas we
+                            breathe.</p>
+                        <p style="font-size:0.85rem; color:var(--color-text-muted); margin-top:12px;">Equation: CO₂ +
+                            H₂O + Light → Glucose + O₂</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HUMAN BODY -->
+        <section class="section-alt" aria-labelledby="body-title">
+            <div class="container">
+                <span class="section-label">Human Biology</span>
+                <h2 class="section-title" id="body-title">The Human Body</h2>
+                <p class="section-subtitle">Our body is made up of many complex, interconnected organ systems that work
+                    together to keep us alive and healthy.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🍎</div>
+                        <h4>Digestive System</h4>
+                        <p>Breaks down food into nutrients that can be absorbed into the bloodstream and used by the
+                            body.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🫁</div>
+                        <h4>Respiratory System</h4>
+                        <p>Takes oxygen from the air into the lungs and removes carbon dioxide from the body.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">❤️</div>
+                        <h4>Circulatory System</h4>
+                        <p>The heart pumps blood through vessels to deliver oxygen and nutrients to every cell in the
+                            body.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🧠</div>
+                        <h4>Nervous System</h4>
+                        <p>The brain, spinal cord, and nerves control body functions and process information from the
+                            senses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🦴</div>
+                        <h4>Skeletal System</h4>
+                        <p>The skeleton gives our body structure, protects internal organs, and allows movement via
+                            muscles and joints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIODIVERSITY -->
+        <section class="section" aria-labelledby="bio-diversity-title">
+            <div class="container">
+                <span class="section-label">Biodiversity</span>
+                <h2 class="section-title" id="bio-diversity-title">The Variety of Life on Earth</h2>
+                <p class="section-subtitle">Biodiversity refers to the variety of living organisms found on our planet —
+                    from microscopic bacteria to giant sequoia trees.</p>
+
+                <div class="science-grid">
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&q=80"
+                                alt="Green plants — representing plant biodiversity" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label" style="color:var(--color-turquoise);">Kingdom Plantae</p>
+                            <h3>Plants</h3>
+                            <p>From mosses to oak trees, plants form the base of most food chains and produce the oxygen
+                                that sustains nearly all life.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600&q=80"
+                                alt="Wild animals — representing animal biodiversity" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label" style="color:var(--color-violet-lt);">Kingdom Animalia</p>
+                            <h3>Animals</h3>
+                            <p>Animals are multi-cellular organisms that consume food for energy. They range from tiny
+                                insects to massive blue whales.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://imgcdn.stablediffusionweb.com/2024/2/23/5de6a216-44c0-4a2c-bb86-a3144004282e.jpg"
+                                alt="Fungi growing on a log in a forest" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label" style="color:var(--color-orange);">Kingdom Fungi</p>
+                            <h3>Fungi</h3>
+                            <p>Fungi decompose dead organic matter, recycling nutrients back into the soil and playing a
+                                crucial role in ecosystems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conservation Message -->
+                <div class="conservation-banner" style="margin-top:40px;">
+                    <h3>🌍 Protect Biodiversity</h3>
+                    <p>Every species plays a role in maintaining healthy ecosystems. Habitat loss, pollution, and
+                        climate change threaten biodiversity worldwide. Protecting nature means protecting ourselves — a
+                        healthy planet supports all life, including our own.</p>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1.1rem;">Continue Exploring
+                    </h3>
+                    <div class="related-links">
+                        <a href="physics.html" class="related-link">Physics →</a>
+                        <a href="chemistry.html" class="related-link">Chemistry →</a>
+                        <a href="space.html" class="related-link">Space Science →</a>
+                        <a href="scientists.html" class="related-link">Famous Scientists →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Science Quiz and Feedback — test your science knowledge and share your thoughts. Science Explorer.">
+    <title>Science Quiz &amp; Feedback — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Extra styles for quiz page only, placed in the shared stylesheet's spirit but minimal additions here -->
+    <style>
+        /* Highlight the selected radio option using CSS only */
+        .quiz-option input[type="radio"]:checked+span {
+            color: var(--color-white);
+            font-weight: 600;
+        }
+
+        /* Give a subtle glow to the quiz card when user has selected an answer */
+        .quiz-option:has(input[type="radio"]:checked) {
+            background: rgba(0, 212, 255, 0.08);
+            border-color: var(--color-cyan);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html" class="active">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Quiz page hero">
+            <div class="page-hero-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1600&q=80'); background-color:#050d1a;">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label">Test Yourself</span>
+                    <h1>Test Your Science<br><span class="text-gradient">Knowledge</span></h1>
+                    <p class="hero-sub">Select your answers below. You can check the correct answers once you have
+                        completed all five questions. Good luck!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <section class="section" aria-labelledby="quiz-heading">
+            <div class="container" style="max-width: 760px;">
+                <span class="section-label">Five Questions</span>
+                <h2 class="section-title" id="quiz-heading">Science Quiz</h2>
+                <p class="section-subtitle" style="max-width:100%;">Select one answer for each question. Note: this quiz
+                    uses native HTML radio buttons — it does <strong>not</strong> calculate a score automatically, as
+                    that requires JavaScript.</p>
+
+                <!-- QUESTION 1 -->
+                <div class="quiz-card" aria-labelledby="q1-heading">
+                    <p class="quiz-num">Question 1 of 5</p>
+                    <h3 id="q1-heading">Which planet is known as the Red Planet?</h3>
+                    <div class="quiz-options" role="group" aria-labelledby="q1-heading">
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="earth">
+                            <span>Earth</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="mars">
+                            <span>Mars</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="venus">
+                            <span>Venus</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="jupiter">
+                            <span>Jupiter</span>
+                        </label>
+                    </div>
+                    <!-- CSS-only answer reveal using HTML details/summary -->
+                    <details class="answer-reveal">
+                        <summary>Reveal the correct answer</summary>
+                        <div class="answer-content">
+                            ✓ <strong>Mars</strong> is known as the Red Planet. Its surface is covered in iron oxide
+                            (rust), giving it a distinctive reddish appearance.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- QUESTION 2 -->
+                <div class="quiz-card" aria-labelledby="q2-heading">
+                    <p class="quiz-num">Question 2 of 5</p>
+                    <h3 id="q2-heading">What is the basic unit of life?</h3>
+                    <div class="quiz-options" role="group" aria-labelledby="q2-heading">
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="atom">
+                            <span>Atom</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="organ">
+                            <span>Organ</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="cell">
+                            <span>Cell</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="tissue">
+                            <span>Tissue</span>
+                        </label>
+                    </div>
+                    <details class="answer-reveal">
+                        <summary>Reveal the correct answer</summary>
+                        <div class="answer-content">
+                            ✓ <strong>Cell</strong> is the basic unit of life. All living organisms are made up of cells
+                            — the smallest unit that can carry out all the functions of life.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- QUESTION 3 -->
+                <div class="quiz-card" aria-labelledby="q3-heading">
+                    <p class="quiz-num">Question 3 of 5</p>
+                    <h3 id="q3-heading">Which gas do plants use during photosynthesis?</h3>
+                    <div class="quiz-options" role="group" aria-labelledby="q3-heading">
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="oxygen">
+                            <span>Oxygen</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="nitrogen">
+                            <span>Nitrogen</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="co2">
+                            <span>Carbon dioxide</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="hydrogen">
+                            <span>Hydrogen</span>
+                        </label>
+                    </div>
+                    <details class="answer-reveal">
+                        <summary>Reveal the correct answer</summary>
+                        <div class="answer-content">
+                            ✓ <strong>Carbon dioxide (CO₂)</strong> is used by plants during photosynthesis. They take
+                            it in through tiny pores called stomata and use it, along with water and sunlight, to make
+                            glucose.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- QUESTION 4 -->
+                <div class="quiz-card" aria-labelledby="q4-heading">
+                    <p class="quiz-num">Question 4 of 5</p>
+                    <h3 id="q4-heading">What force pulls objects towards Earth?</h3>
+                    <div class="quiz-options" role="group" aria-labelledby="q4-heading">
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="friction">
+                            <span>Friction</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="gravity">
+                            <span>Gravity</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="magnetism">
+                            <span>Magnetism</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="electricity">
+                            <span>Electricity</span>
+                        </label>
+                    </div>
+                    <details class="answer-reveal">
+                        <summary>Reveal the correct answer</summary>
+                        <div class="answer-content">
+                            ✓ <strong>Gravity</strong> is the force that pulls objects towards Earth. Isaac Newton
+                            described this force after observing a falling apple — the same force that keeps the planets
+                            in orbit around the Sun.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- QUESTION 5 -->
+                <div class="quiz-card" aria-labelledby="q5-heading">
+                    <p class="quiz-num">Question 5 of 5</p>
+                    <h3 id="q5-heading">Which is the largest planet in our solar system?</h3>
+                    <div class="quiz-options" role="group" aria-labelledby="q5-heading">
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="earth">
+                            <span>Earth</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="saturn">
+                            <span>Saturn</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="jupiter">
+                            <span>Jupiter</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="neptune">
+                            <span>Neptune</span>
+                        </label>
+                    </div>
+                    <details class="answer-reveal">
+                        <summary>Reveal the correct answer</summary>
+                        <div class="answer-content">
+                            ✓ <strong>Jupiter</strong> is the largest planet in our solar system. It is so large that
+                            more than 1,300 Earths could fit inside it.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Check Your Answers heading (informational only — no JS scoring) -->
+                <div class="fun-fact" style="margin-top:16px;">
+                    <p class="fun-fact-label">ℹ Check Your Answers</p>
+                    <p>Click <em>"Reveal the correct answer"</em> beneath each question to see the right answer.
+                        Automatic score calculation requires JavaScript, which is not used on this website. Check each
+                        answer yourself and count how many you got correct!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEEDBACK FORM -->
+        <section class="section-alt" aria-labelledby="feedback-heading">
+            <div class="container" style="max-width: 860px;">
+                <span class="section-label">Your Thoughts</span>
+                <h2 class="section-title" id="feedback-heading">Visitor Feedback</h2>
+                <p class="section-subtitle" style="max-width:100%;">We would love to hear from you. Please fill in the
+                    feedback form below.</p>
+
+                <div class="form-card">
+                    <!-- The form uses method="get" and action="#" to show a native browser response when submitted.
+                 Note: no backend is available, so data is not stored or sent anywhere. https://formsubmit.app/f/3tmhbtvbd4-->
+                    <form action="#" method="POST" novalidate aria-label="Science Explorer visitor feedback form">
+
+                        <div class="form-grid">
+
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="visitor-name">Full Name <span aria-hidden="true"
+                                        style="color:var(--color-orange);">*</span></label>
+                                <input type="text" id="visitor-name" name="name" placeholder="Enter your full name"
+                                    required autocomplete="name">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="visitor-email">Email Address <span aria-hidden="true"
+                                        style="color:var(--color-orange);">*</span></label>
+                                <input type="email" id="visitor-email" name="email"
+                                    placeholder="Enter your email address" required autocomplete="email">
+                            </div>
+
+                            <!-- Class -->
+                            <div class="form-group">
+                                <label for="visitor-class">Class / Year</label>
+                                <select id="visitor-class" name="class">
+                                    <option value="" disabled selected>Select your class</option>
+                                    <option value="class6">Class 6</option>
+                                    <option value="class7">Class 7</option>
+                                    <option value="class8">Class 8</option>
+                                    <option value="class9">Class 9</option>
+                                    <option value="class10">Class 10</option>
+                                    <option value="class11">Class 11</option>
+                                    <option value="class12">Class 12</option>
+                                    <!-- <option value="college1">College — 1st Year</option>
+                                    <option value="college2">College — 2nd Year</option>
+                                    <option value="college3">College — 3rd Year</option> -->
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Favourite Science Topic -->
+                            <div class="form-group">
+                                <label for="visitor-topic">Favourite Science Topic</label>
+                                <select id="visitor-topic" name="topic">
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="space">Space Science</option>
+                                    <option value="experiments">Experiments</option>
+                                </select>
+                            </div>
+
+                            <!-- Website Rating -->
+                            <div class="form-group full-width">
+                                <fieldset style="border:none; padding:0;">
+                                    <legend
+                                        style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted); margin-bottom:12px;">
+                                        How would you rate this website? <span aria-hidden="true"
+                                            style="color:var(--color-orange);">*</span></legend>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="rating" value="excellent" required>
+                                            Excellent
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="rating" value="good">
+                                            Good
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="rating" value="average">
+                                            Average
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="rating" value="needs-improvement">
+                                            Needs Improvement
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <!-- What did you learn? -->
+                            <div class="form-group full-width">
+                                <label for="visitor-learned">What did you learn from Science Explorer?</label>
+                                <textarea id="visitor-learned" name="learned"
+                                    placeholder="Share something interesting you learned — a new fact, experiment, or discovery..."></textarea>
+                            </div>
+
+                            <!-- Recommend? -->
+                            <div class="form-group full-width">
+                                <fieldset style="border:none; padding:0;">
+                                    <legend
+                                        style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted); margin-bottom:12px;">
+                                        Would you recommend this website to other students?</legend>
+                                    <div class="radio-group" style="flex-direction:row; gap:24px;">
+                                        <label class="radio-label">
+                                            <input type="radio" name="recommend" value="yes">
+                                            Yes
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="recommend" value="no">
+                                            No
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <!-- Form buttons -->
+                        <div style="display:flex; gap:16px; margin-top:32px; flex-wrap:wrap;">
+                            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                            <button type="reset" class="btn btn-outline">Reset Form</button>
+                        </div>
+
+                        <!-- Backend note -->
+                        <p class="form-note">
+                            Note: This form uses native HTML validation. However, because this website has no backend
+                            server, submitted feedback is not stored or sent anywhere.
+                        </p>
+                    </form>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <div class="related-links">
+                        <a href="index.html" class="related-link">← Back to Home</a>
+                        <a href="experiments.html" class="related-link">Try Experiments →</a>
+                        <a href="scientists.html" class="related-link">Famous Scientists →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Space Science — explore the solar system, planets, stars, the Moon, and space exploration. Science Explorer.">
+    <title>Space Science — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html" class="active">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO — Space themed with star decoration -->
+        <section class="page-hero starfield" aria-label="Space Science hero" style="min-height:60vh;">
+            <div class="page-hero-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=1600&q=80'); background-color:#020408;">
+            </div>
+            <div class="page-hero-overlay"
+                style="background: linear-gradient(135deg, rgba(2,4,8,0.92) 0%, rgba(5,13,26,0.55) 100%);"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label">Science Subject</span>
+                    <h1>Exploring the<br><span class="text-gradient">Universe</span></h1>
+                    <p class="hero-sub">Space science helps us understand objects and phenomena beyond Earth — from
+                        nearby planets to distant galaxies billions of light-years away.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section" style="background: var(--color-bg);" aria-labelledby="space-intro">
+            <div class="container">
+                <div class="intro-block">
+                    <span class="section-label">Introduction</span>
+                    <h2 class="section-title" id="space-intro">What is Space Science?</h2>
+                    <p>Space science — also called astronomy — is the study of celestial objects and phenomena that lie
+                        beyond Earth's atmosphere. Scientists observe planets, moons, stars, galaxies, asteroids, and
+                        comets to understand the origin, structure, and future of the universe.</p>
+                    <p>From the first telescopes pointed at the night sky to powerful spacecraft sent to explore Mars
+                        and beyond, humanity's curiosity about the cosmos has driven some of the greatest scientific
+                        achievements in history.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLAR SYSTEM — Planet Cards -->
+        <section class="section-alt starfield" aria-labelledby="solar-title">
+            <div class="container">
+                <span class="section-label">Our Solar System</span>
+                <h2 class="section-title" id="solar-title">The Eight Planets</h2>
+                <p class="section-subtitle">Our solar system consists of the Sun and the eight planets that orbit it,
+                    along with moons, asteroids, and comets.</p>
+
+                <div class="planet-grid">
+
+                    <!-- Mercury -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/mercury-messenger-globe-pia15162.jpg"
+                                alt="Mercury — closest planet to the Sun" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">1st from Sun · Rocky</p>
+                            <h3>Mercury</h3>
+                            <p>The smallest planet and closest to the Sun. Extreme temperature swings between day and
+                                night.</p>
+                        </div>
+                    </div>
+
+                    <!-- Venus -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/venus-mariner-10-pia23791.jpg"
+                                alt="Venus — hottest planet in the solar system" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">2nd from Sun · Rocky</p>
+                            <h3>Venus</h3>
+                            <p>The hottest planet despite not being closest to the Sun, due to its thick atmosphere.</p>
+                        </div>
+                    </div>
+
+                    <!-- Earth -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://media.istockphoto.com/id/175205370/photo/view-of-earth-from-space-with-clipping-path.jpg?s=170667a&w=0&k=20&c=d1py08eqCobRJpkxSjkwNSjZhp2s79iZyXIgnefNE4w="
+                                alt="Earth — the blue planet, our home" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">3rd from Sun · Rocky</p>
+                            <h3>Earth</h3>
+                            <p>Our home — the only planet known to support life, with liquid water and a breathable
+                                atmosphere.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mars -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/mars-full-globe-1k-true-color.jpg"
+                                alt="Mars — the Red Planet" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">4th from Sun · Rocky</p>
+                            <h3>Mars</h3>
+                            <p>Known as the Red Planet due to iron oxide on its surface. Home to the largest volcano in
+                                the solar system.</p>
+                        </div>
+                    </div>
+
+                    <!-- Jupiter -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/jupiter-marble-pia22946.jpg"
+                                alt="Jupiter — the largest planet" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">5th from Sun · Gas Giant</p>
+                            <h3>Jupiter</h3>
+                            <p>The largest planet in our solar system. Its famous Great Red Spot is a storm larger than
+                                Earth.</p>
+                        </div>
+                    </div>
+
+                    <!-- Saturn -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/saturn-farewell-pia21345.jpg"
+                                alt="Saturn — famous for its beautiful rings" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">6th from Sun · Gas Giant</p>
+                            <h3>Saturn</h3>
+                            <p>Famous for its spectacular ring system made of ice and rock particles orbiting the
+                                planet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Uranus -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/uranus-pia18182.jpg"
+                                alt="Uranus — the ice giant that rotates on its side" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">7th from Sun · Ice Giant</p>
+                            <h3>Uranus</h3>
+                            <p>Rotates on its side — its axis is tilted almost 98°. It appears blue-green due to methane
+                                in its atmosphere.</p>
+                        </div>
+                    </div>
+
+                    <!-- Neptune -->
+                    <div class="planet-card">
+                        <div class="planet-img-wrap">
+                            <img src="https://science.nasa.gov/wp-content/uploads/2023/05/neptune-pia01492.jpg"
+                                alt="Neptune — the farthest planet and windiest" loading="lazy"
+                                onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg'">
+                        </div>
+                        <div class="planet-body">
+                            <p class="planet-order">8th from Sun · Ice Giant</p>
+                            <h3>Neptune</h3>
+                            <p>The farthest planet, with the strongest winds in the solar system — reaching 2,100 km/h.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANET COMPARISON TABLE -->
+        <section class="section" aria-labelledby="planet-table-title">
+            <div class="container">
+                <span class="section-label">Reference</span>
+                <h2 class="section-title" id="planet-table-title">Planet Comparison Table</h2>
+                <p class="section-subtitle">Compare all eight planets by type, position, and an interesting fact.</p>
+
+                <div class="table-wrap">
+                    <table class="data-table" aria-label="Comparison table of the eight planets">
+                        <thead>
+                            <tr>
+                                <th scope="col">Planet</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Position from Sun</th>
+                                <th scope="col">Interesting Fact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mercury</td>
+                                <td>Rocky</td>
+                                <td>1st</td>
+                                <td>Closest planet to the Sun</td>
+                            </tr>
+                            <tr>
+                                <td>Venus</td>
+                                <td>Rocky</td>
+                                <td>2nd</td>
+                                <td>Very hot surface — hotter than Mercury</td>
+                            </tr>
+                            <tr>
+                                <td>Earth</td>
+                                <td>Rocky</td>
+                                <td>3rd</td>
+                                <td>Only planet known to support life</td>
+                            </tr>
+                            <tr>
+                                <td>Mars</td>
+                                <td>Rocky</td>
+                                <td>4th</td>
+                                <td>Known as the Red Planet</td>
+                            </tr>
+                            <tr>
+                                <td>Jupiter</td>
+                                <td>Gas Giant</td>
+                                <td>5th</td>
+                                <td>Largest planet in the solar system</td>
+                            </tr>
+                            <tr>
+                                <td>Saturn</td>
+                                <td>Gas Giant</td>
+                                <td>6th</td>
+                                <td>Famous for its magnificent ring system</td>
+                            </tr>
+                            <tr>
+                                <td>Uranus</td>
+                                <td>Ice Giant</td>
+                                <td>7th</td>
+                                <td>Rotates on its side — axis tilted ~98°</td>
+                            </tr>
+                            <tr>
+                                <td>Neptune</td>
+                                <td>Ice Giant</td>
+                                <td>8th</td>
+                                <td>Strongest winds in the solar system</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOON AND STARS -->
+        <section class="section-alt" aria-labelledby="moon-title">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+
+                    <!-- The Moon -->
+                    <div>
+                        <span class="section-label">Earth's Satellite</span>
+                        <h2 class="section-title" id="moon-title" style="font-size:1.75rem;">The Moon</h2>
+                        <p>The Moon is Earth's only natural satellite and the fifth-largest moon in the solar system. It
+                            does not produce its own light — instead, it <strong
+                                style="color:var(--color-heading);">reflects sunlight</strong> from the Sun.</p>
+                        <p style="margin-top:12px;">The Moon completes one full orbit around Earth approximately every
+                            27.3 days, and its changing positions relative to the Earth and Sun create the familiar
+                            cycle of phases — new moon, crescent, quarter, gibbous, and full moon.</p>
+                        <p style="margin-top:12px;">Gravitational pull from the Moon causes the ocean tides on Earth.
+                        </p>
+                    </div>
+
+                    <!-- Stars -->
+                    <div>
+                        <span class="section-label" style="color: var(--color-violet-lt);">Stellar Science</span>
+                        <h2 class="section-title" style="font-size:1.75rem;">Stars</h2>
+                        <p>Stars are enormous balls of hot gas — mostly hydrogen and helium — held together by gravity.
+                            Deep in their cores, nuclear fusion converts hydrogen into helium, releasing vast amounts of
+                            energy as <strong style="color:var(--color-heading);">heat and light</strong>.</p>
+                        <p style="margin-top:12px;">Our Sun is the closest star to Earth, located about 150 million
+                            kilometres away. The next nearest star, Proxima Centauri, is about 4.2 light-years distant —
+                            so far that its light takes over four years to reach us.</p>
+                        <p style="margin-top:12px;">Stars come in different sizes, temperatures, and colours, from cool
+                            red dwarfs to blazing blue supergiants.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SPACE EXPLORATION -->
+        <section class="section" aria-labelledby="explore-title">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <span class="section-label">Mission Control</span>
+                        <h2 id="explore-title">Space Exploration</h2>
+                        <p>Humanity has sent both astronauts and robotic spacecraft to explore many parts of our solar
+                            system — a remarkable achievement for a species that only left Earth for the first time in
+                            1961.</p>
+                        <p>Space exploration helps us learn more about:</p>
+                        <ul
+                            style="list-style:disc; padding-left:20px; color:var(--color-text); margin-top:12px; display:flex; flex-direction:column; gap:8px;">
+                            <li>Other planets and their atmospheres</li>
+                            <li>The Moon — its geology and history</li>
+                            <li>Asteroids and comets</li>
+                            <li>The Sun — its energy, solar flares, and magnetic field</li>
+                            <li>The origin and age of the universe</li>
+                        </ul>
+                        <p style="margin-top:16px;">Missions like NASA's Voyager probes, the Mars rovers, and the James
+                            Webb Space Telescope continue to revolutionise our understanding of space.</p>
+                    </div>
+                    <div class="split-img">
+                        <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=800&q=80"
+                            alt="Space exploration — astronaut viewed from space with Earth in background"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div style="margin-top:40px;">
+                    <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1.1rem;">Continue Exploring
+                    </h3>
+                    <div class="related-links">
+                        <a href="physics.html" class="related-link">Physics →</a>
+                        <a href="scientists.html" class="related-link">Famous Scientists →</a>
+                        <a href="experiments.html" class="related-link">Try Experiments →</a>
+                        <a href="quiz.html" class="related-link">Science Quiz →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

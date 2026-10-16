@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Simple Science Experiments — Walking Water, Static Electricity, and Floating Egg. Science Explorer.">
+    <title>Science Experiments — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html" class="active">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Science Experiments hero">
+            <div class="page-hero-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=1600&q=80'); background-color:#050d1a;">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label" style="color: var(--color-orange);">Hands-On Science</span>
+                    <h1>Simple Science<br><span class="text-gradient">Experiments</span></h1>
+                    <p class="hero-sub">Science becomes truly exciting when we can observe it in action. These three
+                        beginner-friendly experiments demonstrate real scientific principles using everyday materials.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAFETY WARNING — Displayed at the top, clearly visible -->
+        <section class="section" aria-label="Safety notice" style="padding: 40px 0;">
+            <div class="container">
+                <div class="safety-box" role="alert" aria-label="Important safety warning for science experiments">
+                    <h3>⚠ Safety First — Important Notice</h3>
+                    <p>Please read these safety rules before attempting any experiment:</p>
+                    <ul>
+                        <li>Always perform experiments under the supervision of a responsible adult or teacher.</li>
+                        <li>Experiments involving heat, fire, chemicals, electricity, or glassware must only be
+                            conducted by qualified supervisors.</li>
+                        <li>Never taste, smell, or touch unknown substances.</li>
+                        <li>Keep your workspace clean and clear of trip hazards.</li>
+                        <li>Wash hands thoroughly after completing any experiment.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+     EXPERIMENT 1: WALKING WATER
+     =============================== -->
+        <section class="section-alt" aria-labelledby="exp1-title">
+            <div class="container">
+                <article class="experiment-card" aria-labelledby="exp1-title">
+
+                    <!-- Header: Image + Intro -->
+                    <div class="experiment-header">
+                        <div class="experiment-img">
+                            <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80"
+                                alt="Coloured water in glasses connected by paper towels — Walking Water experiment"
+                                loading="lazy">
+                        </div>
+                        <div class="experiment-intro">
+                            <div class="experiment-num" aria-hidden="true">01</div>
+                            <p class="card-label" style="color: var(--color-cyan);">Experiment One</p>
+                            <h2 id="exp1-title">Walking Water</h2>
+                            <p style="color: var(--color-text-muted); font-size:0.9rem;">Watch water travel through a
+                                paper towel from one glass to another — a beautiful demonstration of capillary action.
+                            </p>
+                            <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                                <span class="hero-badge">Difficulty: Easy</span>
+                                <span class="hero-badge">Time: 30–60 min</span>
+                                <span class="hero-badge">Concept: Capillary Action</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Materials + Procedure -->
+                    <div class="experiment-body">
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">You Will Need
+                            </h3>
+                            <ul class="materials-list" aria-label="Materials for Walking Water experiment">
+                                <li>Two glasses filled with coloured water</li>
+                                <li>One empty glass</li>
+                                <li>Water</li>
+                                <li>Food colouring (two colours)</li>
+                                <li>Paper towel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">Procedure</h3>
+                            <ol class="procedure-list" aria-label="Steps for Walking Water experiment">
+                                <li>Fill two glasses with water. Add a different food colouring to each glass.</li>
+                                <li>Place the empty glass between the two coloured water glasses.</li>
+                                <li>Fold a paper towel lengthwise into a narrow strip to create a wick.</li>
+                                <li>Place one end of the paper towel into one coloured glass and the other end into the
+                                    empty glass. Repeat with the second coloured glass.</li>
+                                <li>Wait patiently and observe what happens over 30 to 60 minutes.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Results and Science -->
+                    <div class="experiment-result">
+                        <div class="result-box">
+                            <h4>What Happens?</h4>
+                            <p>The coloured water slowly "walks" up through the paper towel and drips into the empty
+                                glass. Over time, the empty glass fills up and the colours may even mix.</p>
+                        </div>
+                        <div class="result-box"
+                            style="background: rgba(124,58,237,0.07); border-color: rgba(168,85,247,0.25);">
+                            <h4 style="color:var(--color-violet-lt);">The Science Behind It</h4>
+                            <p>This happens because of <strong style="color:var(--color-heading);">capillary
+                                    action</strong> — the ability of water to flow upwards through narrow spaces against
+                                gravity. Water molecules are attracted to the fibres in the paper towel, pulling the
+                                water along. This is the same force that pulls water from the roots of plants up to
+                                their leaves.</p>
+                        </div>
+                        <div style="margin-top:20px;">
+                            <label for="obs1"
+                                style="display:block; font-size:0.85rem; font-weight:600; color:var(--color-text-muted); margin-bottom:8px;">📝
+                                My Observations (write what you noticed):</label>
+                            <textarea id="obs1" class="observation-area"
+                                placeholder="Write down what you observed during the experiment — colours, water level, timing..."></textarea>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===============================
+     EXPERIMENT 2: STATIC ELECTRICITY
+     =============================== -->
+        <section class="section" aria-labelledby="exp2-title">
+            <div class="container">
+                <article class="experiment-card" aria-labelledby="exp2-title">
+                    <div class="experiment-header">
+                        <div class="experiment-img">
+                            <img src="https://images.unsplash.com/photo-1528569937393-ee892b976859?w=800&q=80"
+                                alt="Balloon demonstrating static electricity" loading="lazy">
+                        </div>
+                        <div class="experiment-intro">
+                            <div class="experiment-num" aria-hidden="true">02</div>
+                            <p class="card-label" style="color: var(--color-violet-lt);">Experiment Two</p>
+                            <h2 id="exp2-title">Balloon and Static Electricity</h2>
+                            <p style="color: var(--color-text-muted); font-size:0.9rem;">Discover how rubbing a balloon
+                                can give it an electrical charge powerful enough to attract small objects.</p>
+                            <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                                <span class="hero-badge">Difficulty: Easy</span>
+                                <span class="hero-badge">Time: 5 min</span>
+                                <span class="hero-badge">Concept: Static Charge</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experiment-body">
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">You Will Need
+                            </h3>
+                            <ul class="materials-list" aria-label="Materials for Static Electricity experiment">
+                                <li>A balloon (inflated)</li>
+                                <li>Small pieces of torn paper</li>
+                                <li>A piece of wool or a dry cloth</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">Procedure</h3>
+                            <ol class="procedure-list" aria-label="Steps for Static Electricity experiment">
+                                <li>Inflate the balloon and tie the end securely.</li>
+                                <li>Tear small pieces of paper and place them flat on a table.</li>
+                                <li>Rub the balloon vigorously against the wool or dry cloth for about 30 seconds.</li>
+                                <li>Slowly bring the rubbed side of the balloon close to the paper pieces without
+                                    touching them.</li>
+                                <li>Observe what happens to the paper.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="experiment-result">
+                        <div class="result-box">
+                            <h4>What Happens?</h4>
+                            <p>The small paper pieces jump up towards the balloon and appear to stick to it, even though
+                                nothing is touching them!</p>
+                        </div>
+                        <div class="result-box"
+                            style="background: rgba(124,58,237,0.07); border-color: rgba(168,85,247,0.25);">
+                            <h4 style="color:var(--color-violet-lt);">The Science Behind It</h4>
+                            <p>When you rub the balloon against wool, electrons (negatively charged particles) transfer
+                                from the cloth to the balloon. This gives the balloon a <strong
+                                    style="color:var(--color-heading);">negative static charge</strong>. The charged
+                                balloon then attracts the neutral paper pieces, because opposite charges attract each
+                                other — this is a fundamental law of electricity.</p>
+                        </div>
+                        <div style="margin-top:20px;">
+                            <label for="obs2"
+                                style="display:block; font-size:0.85rem; font-weight:600; color:var(--color-text-muted); margin-bottom:8px;">📝
+                                My Observations:</label>
+                            <textarea id="obs2" class="observation-area"
+                                placeholder="Write what you observed — did the paper jump? How far away did the balloon attract paper?"></textarea>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===============================
+     EXPERIMENT 3: FLOATING EGG
+     =============================== -->
+        <section class="section-alt" aria-labelledby="exp3-title">
+            <div class="container">
+                <article class="experiment-card" aria-labelledby="exp3-title">
+                    <div class="experiment-header">
+                        <div class="experiment-img">
+                            <img src="https://images.unsplash.com/photo-1607290882845-8b27f28c59ce?w=800&q=80"
+                                alt="Egg in a glass of water — Floating Egg experiment using salt" loading="lazy">
+                        </div>
+                        <div class="experiment-intro">
+                            <div class="experiment-num" aria-hidden="true">03</div>
+                            <p class="card-label" style="color: var(--color-turquoise);">Experiment Three</p>
+                            <h2 id="exp3-title">The Floating Egg</h2>
+                            <p style="color: var(--color-text-muted); font-size:0.9rem;">Make a sinking egg float by
+                                dissolving salt in water — a demonstration of density and buoyancy.</p>
+                            <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+                                <span class="hero-badge">Difficulty: Easy</span>
+                                <span class="hero-badge">Time: 10 min</span>
+                                <span class="hero-badge">Concept: Density</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experiment-body">
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">You Will Need
+                            </h3>
+                            <ul class="materials-list" aria-label="Materials for Floating Egg experiment">
+                                <li>A tall glass of water</li>
+                                <li>A fresh egg (uncooked)</li>
+                                <li>Salt (several tablespoons)</li>
+                                <li>A spoon for stirring</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1rem;">Procedure</h3>
+                            <ol class="procedure-list" aria-label="Steps for Floating Egg experiment">
+                                <li>Fill a tall glass with clean, plain water.</li>
+                                <li>Gently lower the raw egg into the glass. Observe — it sinks.</li>
+                                <li>Remove the egg and add several tablespoons of salt to the water.</li>
+                                <li>Stir well until the salt is completely dissolved.</li>
+                                <li>Gently lower the egg back into the salty water and observe its position.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="experiment-result">
+                        <div class="result-box">
+                            <h4>What Happens?</h4>
+                            <p>In plain water, the egg sinks to the bottom. After adding enough salt and stirring, the
+                                egg rises and floats in the middle or near the surface of the water.</p>
+                        </div>
+                        <div class="result-box"
+                            style="background: rgba(0,184,169,0.07); border-color: rgba(0,184,169,0.25);">
+                            <h4 style="color:var(--color-turquoise);">The Science Behind It</h4>
+                            <p>This works because of <strong style="color:var(--color-heading);">density</strong>. An
+                                object floats when it is less dense than the liquid it is in. A fresh egg is denser than
+                                plain water, so it sinks. When you dissolve salt in the water, you increase the water's
+                                density. Once the salt water becomes denser than the egg, the egg floats — the same
+                                principle that makes it easier to float in a salty sea than in a freshwater pool.</p>
+                        </div>
+                        <div style="margin-top:20px;">
+                            <label for="obs3"
+                                style="display:block; font-size:0.85rem; font-weight:600; color:var(--color-text-muted); margin-bottom:8px;">📝
+                                My Observations:</label>
+                            <textarea id="obs3" class="observation-area"
+                                placeholder="Write how much salt you added, and how high the egg floated in the water..."></textarea>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Related links -->
+                <div style="margin-top:16px;">
+                    <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1.1rem;">Continue Exploring
+                    </h3>
+                    <div class="related-links">
+                        <a href="physics.html" class="related-link">Physics →</a>
+                        <a href="chemistry.html" class="related-link">Chemistry →</a>
+                        <a href="biology.html" class="related-link">Biology →</a>
+                        <a href="quiz.html" class="related-link">Take the Quiz →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

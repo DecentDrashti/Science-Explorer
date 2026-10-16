@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Science Explorer — an educational website to discover Physics, Chemistry, Biology, and Space Science. Designed for students.">
+    <title>Science Explorer — Discover. Explore. Understand.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =============================
+     NAVIGATION BAR
+     ============================= -->
+    <header class="navbar" role="banner">
+        <!-- Hidden checkbox for CSS-only mobile menu -->
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <!-- Logo + Brand -->
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <!-- Hamburger label for mobile -->
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <!-- Navigation Links -->
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =============================
+     HERO SECTION
+     ============================= -->
+        <section class="hero" aria-label="Hero">
+            <!-- Background image with dark overlay -->
+            <div class="hero-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1600&q=80'); background-color: #050d1a;">
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Small decorative label above heading -->
+                    <span class="hero-label">01 / Discover — Curiosity starts here</span>
+
+                    <!-- Main heading -->
+                    <h1>Explore the World<br>of Science.</h1>
+
+                    <!-- Supporting tagline -->
+                    <p class="hero-tagline">Discover. Explore. Understand.</p>
+
+                    <!-- Supporting text -->
+                    <p class="hero-sub">
+                        Science helps us understand everything — from the movement of distant planets
+                        to the microscopic cells inside our own bodies. Start your journey today.
+                    </p>
+
+                    <!-- Call-to-action buttons -->
+                    <div class="btn-group">
+                        <a href="physics.html" class="btn btn-primary">Start Exploring</a>
+                        <a href="scientists.html" class="btn btn-outline">Meet the Scientists</a>
+                    </div>
+
+                    <!-- Decorative info badges
+            <div class="hero-badges">
+                <span class="hero-badge">Explore the unknown</span>
+                <span class="hero-badge">8 pages of science</span>
+                <span class="hero-badge">Built for students</span>
+            </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+     DISCOVERY CARDS SECTION
+     ============================= -->
+        <section class="section" aria-labelledby="discover-title">
+            <div class="container">
+                <span class="section-label">What will you discover?</span>
+                <h2 class="section-title" id="discover-title">Explore Science Topics</h2>
+                <p class="section-subtitle">Choose a subject and dive deep into the fascinating world of science.</p>
+
+                <!-- Four subject cards -->
+                <div class="science-grid">
+
+                    <!-- Physics Card -->
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://wallpapercave.com/wp/wp2166331.jpg"
+                                alt="Physics — light and energy experiments" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Physics</p>
+                            <h3>Understanding How Things Work</h3>
+                            <p>Explore forces, energy, light, and sound. Discover the laws that govern every object in
+                                the universe.</p>
+                            <a href="physics.html" class="card-link">Explore Physics</a>
+                        </div>
+                    </article>
+
+                    <!-- Chemistry Card -->
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://t4.ftcdn.net/jpg/09/79/88/23/360_F_979882363_fXQ2iJBYj4i0uMjMWYhfs9hCpamcCum5.jpg"
+                                alt="Chemistry — laboratory flasks and experiments" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Chemistry</p>
+                            <h3>The Science of Matter</h3>
+                            <p>Investigate atoms, elements, and reactions. Learn how matter transforms and what
+                                everything is made of.</p>
+                            <a href="chemistry.html" class="card-link">Explore Chemistry</a>
+                        </div>
+                    </article>
+
+                    <!-- Biology Card -->
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/261920508/original/a066e9863f18c584a21ef6058b5ee8d075389904/do-something-exceptional-as-tutor.jpg"
+                                alt="Biology — microscopic view of plant cells" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Biology</p>
+                            <h3>The Science of Life</h3>
+                            <p>Discover cells, plants, animals, and the human body. Understand life at every scale.</p>
+                            <a href="biology.html" class="card-link">Explore Biology</a>
+                        </div>
+                    </article>
+
+                    <!-- Space Science Card -->
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/spiral/Hubble_NGC1961_potw2517a.jpg?w=4025&h=3799&fit=clip&crop=faces%2Cfocalpoint"
+                                alt="Space Science — planets and galaxies" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Space Science</p>
+                            <h3>Exploring the Universe</h3>
+                            <p>Journey through our solar system, learn about stars, planets, and the vastness of the
+                                universe.</p>
+                            <a href="space.html" class="card-link">Explore Space</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+     WHY SCIENCE MATTERS
+     ============================= -->
+        <section class="section-alt" aria-labelledby="why-title">
+            <div class="container">
+                <span class="section-label">Importance</span>
+                <h2 class="section-title" id="why-title">Why Science Matters</h2>
+                <p class="section-subtitle">Science is the foundation of our modern world. Here is why it matters to
+                    every one of us.</p>
+
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-number">01</div>
+                        <h4>Understand the Natural World</h4>
+                        <p>Science explains natural phenomena — from weather patterns to tectonic plates and ecosystems.
+                        </p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">02</div>
+                        <h4>Develop New Technologies</h4>
+                        <p>Every smartphone, satellite, and medicine exists because of scientific research and
+                            discovery.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">03</div>
+                        <h4>Improve Healthcare</h4>
+                        <p>Biology and chemistry have given us vaccines, surgical techniques, and life-saving medicines.
+                        </p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">04</div>
+                        <h4>Solve Environmental Problems</h4>
+                        <p>Science helps us understand climate change, pollution, and how to protect our planet's
+                            ecosystems.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">05</div>
+                        <h4>Make Our Lives Safer</h4>
+                        <p>From safety standards to engineering, science ensures the structures, machines, and systems
+                            we rely on are reliable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+     FEATURED DISCOVERY (Split Layout)
+     ============================= -->
+        <section class="section" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="split-layout">
+                    <!-- Left: Image -->
+                    <div class="split-img">
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80"
+                            alt="A scientist working in a modern laboratory, exploring ideas" loading="lazy">
+                    </div>
+                    <!-- Right: Text -->
+                    <div class="split-text">
+                        <span class="section-label">Featured Discovery</span>
+                        <h2 id="featured-title">Science, Curiosity,<br>and Everyday Life</h2>
+                        <p>
+                            Every great discovery began with a simple question. When Newton watched an apple fall, when
+                            Curie studied invisible rays, or when Darwin observed animals on distant islands — curiosity
+                            was
+                            the spark that changed our world.
+                        </p>
+                        <p>
+                            Science is not just something that happens in laboratories. It is in the food we eat, the
+                            devices
+                            we use, and the air we breathe. Understanding science means understanding the world around
+                            us
+                            more deeply.
+                        </p>
+                        <p>
+                            <em>Science Explorer</em> is designed to make that understanding accessible, engaging, and
+                            inspiring
+                            for every student.
+                        </p>
+                        <div class="related-links">
+                            <a href="experiments.html" class="related-link">Try Experiments</a>
+                            <a href="scientists.html" class="related-link">Famous Scientists</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+     SCIENCE QUOTE
+     ============================= -->
+        <section class="quote-section" aria-label="Science quote">
+            <div class="container">
+                <blockquote>
+                    <p class="quote-text">"The important thing is to never stop questioning."</p>
+                    <footer class="quote-author">— Albert Einstein</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- =============================
+     EXPLORE MORE LINKS
+     ============================= -->
+        <section class="section" aria-labelledby="explore-more-title">
+            <div class="container">
+                <span class="section-label">Keep Going</span>
+                <h2 class="section-title" id="explore-more-title">Explore More</h2>
+                <p class="section-subtitle">There is always more to discover on Science Explorer.</p>
+
+                <!-- Three highlighted action cards -->
+                <div class="science-grid">
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=600&q=80"
+                                alt="Portrait of Albert Einstein" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Meet the Greats</p>
+                            <h3>Famous Scientists</h3>
+                            <p>Learn about Newton, Einstein, Curie, Raman, Darwin, and Bose — the minds who shaped
+                                science.</p>
+                            <a href="scientists.html" class="card-link">Meet the Scientists</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=600&q=80"
+                                alt="Simple science experiment — coloured water in glasses" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Hands-On</p>
+                            <h3>Science Experiments</h3>
+                            <p>Try simple experiments at home — Walking Water, Static Electricity, and the Floating Egg.
+                            </p>
+                            <a href="experiments.html" class="card-link">See Experiments</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80"
+                                alt="Science quiz and knowledge test illustration" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Test Yourself</p>
+                            <h3>Science Quiz</h3>
+                            <p>How well do you know your science? Take the quiz and share your feedback with us.</p>
+                            <a href="quiz.html" class="card-link">Take the Quiz</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============================
+     FOOTER
+     ============================= -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student. Explore physics, chemistry, biology, space, and more.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+
+                <!-- More Links -->
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Decorative atom -->
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+
+            <!-- Copyright bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

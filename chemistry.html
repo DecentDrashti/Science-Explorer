@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Chemistry — learn about atoms, elements, chemical reactions, and the science of matter. Science Explorer.">
+    <title>Chemistry — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html" class="active">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Chemistry hero">
+            <div class="page-hero-bg"
+                style="background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240801/pngtree-colorful-chemistry-lab-with-beakers-and-molecular-models-stock-image_16123652.jpg'); background-color:#050d1a;">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label">Science Subject</span>
+                    <h1>Chemistry: The Science<br><span class="text-gradient">of Matter</span></h1>
+                    <p class="hero-sub">Chemistry is the study of matter, its properties, composition, and the changes
+                        it undergoes. Everything around us is made of matter — and chemistry helps us understand it.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section" aria-labelledby="chem-intro">
+            <div class="container">
+                <div class="intro-block">
+                    <span class="section-label">Introduction</span>
+                    <h2 class="section-title" id="chem-intro">What is Chemistry?</h2>
+                    <p>Chemistry is the branch of science concerned with the substances that make up matter, their
+                        properties, and the reactions they undergo. It bridges the gap between physics and biology,
+                        helping explain both the structure of the universe and the processes of life.</p>
+                    <p>From the water we drink to the medicines we take, chemistry is at the heart of almost everything
+                        around us. By understanding chemistry, we gain insight into how the world is built at the
+                        smallest possible scale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ATOMS SECTION -->
+        <section class="section-alt" aria-labelledby="atoms-title">
+            <div class="container">
+                <span class="section-label">Structure</span>
+                <h2 class="section-title" id="atoms-title">Atoms — The Building Blocks</h2>
+                <p class="section-subtitle">An atom is the basic unit of an element. Every atom consists of three types
+                    of particles.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+
+                    <!-- Atom description cards -->
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="feature-card"
+                            style="text-align:left; display:flex; gap:16px; align-items:flex-start;">
+                            <div style="width:44px; height:44px; background: linear-gradient(135deg,#f97316,#dc2626); border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0;"
+                                aria-hidden="true">p+</div>
+                            <div>
+                                <h4 style="color:var(--color-heading); margin-bottom:6px;">Protons</h4>
+                                <p style="font-size:0.875rem; color:var(--color-text-muted);">Found in the nucleus.
+                                    Protons carry a <strong style="color:#f97316;">positive electric charge</strong>.
+                                    The number of protons determines which element an atom is.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card"
+                            style="text-align:left; display:flex; gap:16px; align-items:flex-start;">
+                            <div style="width:44px; height:44px; background: linear-gradient(135deg,#6b7280,#374151); border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; color:white;"
+                                aria-hidden="true">n</div>
+                            <div>
+                                <h4 style="color:var(--color-heading); margin-bottom:6px;">Neutrons</h4>
+                                <p style="font-size:0.875rem; color:var(--color-text-muted);">Also found in the nucleus.
+                                    Neutrons carry <strong style="color:#9ca3af;">no electric charge</strong>. They add
+                                    mass to the atom.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card"
+                            style="text-align:left; display:flex; gap:16px; align-items:flex-start;">
+                            <div style="width:44px; height:44px; background: linear-gradient(135deg,var(--color-cyan),#0066aa); border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; color:white;"
+                                aria-hidden="true">e-</div>
+                            <div>
+                                <h4 style="color:var(--color-heading); margin-bottom:6px;">Electrons</h4>
+                                <p style="font-size:0.875rem; color:var(--color-text-muted);">Electrons orbit the
+                                    nucleus in shells. They carry a <strong style="color:var(--color-cyan);">negative
+                                        electric charge</strong> and are involved in chemical bonding.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS Atom illustration -->
+                    <div class="atom-illustration"
+                        aria-label="CSS diagram showing an atom with nucleus and orbiting electrons">
+                        <div class="atom-core">
+                            <div class="atom-nucleus" aria-hidden="true"></div>
+                            <div class="atom-orbit" aria-hidden="true">
+                                <div class="atom-electron"></div>
+                            </div>
+                            <div class="atom-orbit" aria-hidden="true">
+                                <div class="atom-electron"></div>
+                            </div>
+                            <div class="atom-orbit" aria-hidden="true">
+                                <div class="atom-electron"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ELEMENTS SECTION -->
+        <section class="section" aria-labelledby="elements-title">
+            <div class="container">
+                <span class="section-label">Elements</span>
+                <h2 class="section-title" id="elements-title">Common Elements</h2>
+                <p class="section-subtitle">An element is a pure substance made up of one type of atom. Here are six
+                    important elements.</p>
+
+                <div class="element-grid">
+                    <div class="element-card">
+                        <div class="element-symbol">H</div>
+                        <div class="element-name">Hydrogen</div>
+                        <div class="element-num">Atomic No. 1</div>
+                        <div class="element-use">Fuel &amp; industry</div>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">O</div>
+                        <div class="element-name">Oxygen</div>
+                        <div class="element-num">Atomic No. 8</div>
+                        <div class="element-use">Respiration</div>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">C</div>
+                        <div class="element-name">Carbon</div>
+                        <div class="element-num">Atomic No. 6</div>
+                        <div class="element-use">Living organisms</div>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">Fe</div>
+                        <div class="element-name">Iron</div>
+                        <div class="element-num">Atomic No. 26</div>
+                        <div class="element-use">Construction</div>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">Au</div>
+                        <div class="element-name">Gold</div>
+                        <div class="element-num">Atomic No. 79</div>
+                        <div class="element-use">Jewellery</div>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">Na</div>
+                        <div class="element-name">Sodium</div>
+                        <div class="element-num">Atomic No. 11</div>
+                        <div class="element-use">Chemical compounds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEMICAL REACTIONS -->
+        <section class="section-alt" aria-labelledby="reactions-title">
+            <div class="container">
+                <span class="section-label">Reactions</span>
+                <h2 class="section-title" id="reactions-title">Chemical Reactions</h2>
+                <p class="section-subtitle">A chemical reaction occurs when substances change into new substances with
+                    different properties.</p>
+
+                <div class="science-grid">
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                                alt="Rusting iron — an example of a chemical reaction" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Oxidation</p>
+                            <h3>Rusting of Iron</h3>
+                            <p>Iron reacts with oxygen and water in the air to form iron oxide (rust). This is a slow,
+                                irreversible chemical change.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=600&q=80"
+                                alt="Burning wood — combustion chemical reaction" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Combustion</p>
+                            <h3>Burning of Wood</h3>
+                            <p>Wood reacts with oxygen during burning (combustion), releasing heat energy, light, carbon
+                                dioxide, and water vapour.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80"
+                                alt="Digestion of food — biochemical reactions" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Biochemistry</p>
+                            <h3>Digestion of Food</h3>
+                            <p>Enzymes in our digestive system break down complex food molecules into simpler ones
+                                through chemical reactions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.mf7I67JNi3GEHszFMgkFNgHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt="Cooking an egg — heat causing protein denaturation" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-label">Denaturation</p>
+                            <h3>Cooking an Egg</h3>
+                            <p>Heat causes the proteins in an egg to unfold and re-bond in a new structure —
+                                transforming a liquid into a solid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ELEMENTS TABLE -->
+        <section class="section" aria-labelledby="elements-table-title">
+            <div class="container">
+                <span class="section-label">Reference</span>
+                <h2 class="section-title" id="elements-table-title">Elements at a Glance</h2>
+                <p class="section-subtitle">A summary of common elements, their symbols, atomic numbers, and uses.</p>
+
+                <div class="table-wrap">
+                    <table class="data-table"
+                        aria-label="Table of common elements with symbol, atomic number, and common use">
+                        <thead>
+                            <tr>
+                                <th scope="col">Element</th>
+                                <th scope="col">Symbol</th>
+                                <th scope="col">Atomic Number</th>
+                                <th scope="col">Common Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hydrogen</td>
+                                <td><strong style="color:var(--color-turquoise);">H</strong></td>
+                                <td>1</td>
+                                <td>Fuel and industry</td>
+                            </tr>
+                            <tr>
+                                <td>Carbon</td>
+                                <td><strong style="color:var(--color-turquoise);">C</strong></td>
+                                <td>6</td>
+                                <td>Living organisms</td>
+                            </tr>
+                            <tr>
+                                <td>Oxygen</td>
+                                <td><strong style="color:var(--color-turquoise);">O</strong></td>
+                                <td>8</td>
+                                <td>Respiration</td>
+                            </tr>
+                            <tr>
+                                <td>Sodium</td>
+                                <td><strong style="color:var(--color-turquoise);">Na</strong></td>
+                                <td>11</td>
+                                <td>Chemical compounds</td>
+                            </tr>
+                            <tr>
+                                <td>Iron</td>
+                                <td><strong style="color:var(--color-turquoise);">Fe</strong></td>
+                                <td>26</td>
+                                <td>Construction</td>
+                            </tr>
+                            <tr>
+                                <td>Copper</td>
+                                <td><strong style="color:var(--color-turquoise);">Cu</strong></td>
+                                <td>29</td>
+                                <td>Electrical wiring</td>
+                            </tr>
+                            <tr>
+                                <td>Gold</td>
+                                <td><strong style="color:var(--color-turquoise);">Au</strong></td>
+                                <td>79</td>
+                                <td>Jewellery</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAFETY SECTION -->
+        <section class="section-alt" aria-labelledby="chem-safety-title">
+            <div class="container">
+                <span class="section-label">Safety First</span>
+                <h2 class="section-title" id="chem-safety-title">Chemistry Safety</h2>
+                <p class="section-subtitle">When working with chemicals or laboratory equipment, safety is always the
+                    top priority.</p>
+
+                <div class="safety-box" role="note" aria-label="Chemistry safety guidelines">
+                    <h3>⚠ Important Safety Rules</h3>
+                    <ul>
+                        <li>Always wear appropriate safety equipment — safety goggles and gloves when required.</li>
+                        <li>Never taste or smell chemicals directly from a container.</li>
+                        <li>Do not mix unknown substances — unexpected reactions can be dangerous.</li>
+                        <li>Always follow your teacher's or supervisor's instructions.</li>
+                        <li>Handle all laboratory equipment carefully and report any breakages immediately.</li>
+                    </ul>
+                </div>
+
+                <!-- Fun Fact -->
+                <div class="fun-fact">
+                    <p class="fun-fact-label">🥇 Fun Fact</p>
+                    <p>The chemical symbol for gold is <strong>Au</strong>, which comes from the Latin word
+                        <em>aurum</em>. Many element symbols come from their Latin names — for example, Fe (iron) from
+                        <em>ferrum</em>, and Na (sodium) from <em>natrium</em>.
+                    </p>
+                </div>
+
+                <h3 style="color:var(--color-heading); margin-bottom:16px; font-size:1.1rem;">Continue Exploring</h3>
+                <div class="related-links">
+                    <a href="physics.html" class="related-link">Physics →</a>
+                    <a href="biology.html" class="related-link">Biology →</a>
+                    <a href="space.html" class="related-link">Space Science →</a>
+                    <a href="experiments.html" class="related-link">Try Experiments →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

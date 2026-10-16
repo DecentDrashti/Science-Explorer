@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Famous Scientists — learn about Newton, Einstein, Curie, Darwin, Raman, and Bose. Science Explorer.">
+    <title>Famous Scientists — Science Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" role="banner">
+        <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Science Explorer Home">
+                <div class="nav-atom" aria-hidden="true"></div>
+                <div class="nav-brand-text">
+                    <span class="nav-name">Science Explorer</span>
+                    <span class="nav-tagline">Discover. Explore. Understand.</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="nav-menu-btn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="biology.html">Biology</a>
+                <a href="space.html">Space</a>
+                <a href="scientists.html" class="active">Scientists</a>
+                <a href="experiments.html">Experiments</a>
+                <a href="quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Famous Scientists hero">
+            <div class="page-hero-bg"
+                style="background-image: url('https://images.unsplash.com/photo-1564325724739-bae0bd08762c?w=1600&q=80'); background-color:#050d1a;">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="hero-label" style="color: var(--color-violet-lt);">The Greats</span>
+                    <h1>Scientists Who<br><span class="text-gradient">Changed the World</span></h1>
+                    <p class="hero-sub">Throughout history, scientists have made discoveries that transformed our
+                        understanding of nature and improved human life across the globe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section" aria-labelledby="sci-intro">
+            <div class="container">
+                <div class="intro-block">
+                    <span class="section-label">Introduction</span>
+                    <h2 class="section-title" id="sci-intro">Curious Minds, Lasting Impact</h2>
+                    <p>The history of science is a story of extraordinary individuals who dared to question the world
+                        around them. Armed with curiosity, rigor, and persistence, these scientists built the foundation
+                        of our modern understanding — from the laws governing motion and gravity to the mysteries of
+                        life and the structure of matter.</p>
+                    <p>Here we celebrate six scientists whose work continues to shape science, technology, and everyday
+                        life today.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCIENTIST PROFILE CARDS -->
+        <section class="section-alt" aria-labelledby="profiles-title">
+            <div class="container">
+                <span class="section-label">Profiles</span>
+                <h2 class="section-title" id="profiles-title">Meet the Scientists</h2>
+                <p class="section-subtitle">Six remarkable individuals whose discoveries changed everything.</p>
+
+                <div class="science-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+
+                    <!-- Isaac Newton -->
+                    <article class="scientist-card" aria-labelledby="newton-name">
+                        <div class="scientist-img-wrap">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg"
+                                alt="Portrait of Isaac Newton, English physicist and mathematician" loading="lazy"
+                                onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field">Physics &amp; Mathematics</p>
+                            <h3 id="newton-name">Isaac Newton</h3>
+                            <p>English physicist and mathematician who laid the foundations of classical mechanics.</p>
+                            <ul class="scientist-contributions" aria-label="Newton's key contributions">
+                                <li>Laws of Motion — describing how forces affect objects</li>
+                                <li>Universal gravitation — explaining why objects fall</li>
+                                <li>Optics — discovering that white light contains a spectrum of colours</li>
+                                <li>Co-inventor of calculus (independently of Leibniz)</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Charles Darwin -->
+                    <article class="scientist-card" aria-labelledby="darwin-name">
+                        <div class="scientist-img-wrap">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Charles_Darwin_seated_crop.jpg"
+                                alt="Portrait of Charles Darwin, British naturalist" loading="lazy"
+                                onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field">Biology &amp; Natural Science</p>
+                            <h3 id="darwin-name">Charles Darwin</h3>
+                            <p>British naturalist who developed the theory of evolution by natural selection.</p>
+                            <ul class="scientist-contributions" aria-label="Darwin's key contributions">
+                                <li>Theory of evolution by natural selection</li>
+                                <li>Published <em>On the Origin of Species</em> (1859)</li>
+                                <li>Showed how species adapt to their environment over generations</li>
+                                <li>Revolutionised our understanding of the diversity of life</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Marie Curie -->
+                    <article class="scientist-card" aria-labelledby="curie-name">
+                        <div class="scientist-img-wrap">
+                            <img src="https://magnifymind.com/wp-content/uploads/2024/06/Marie-Curie.jpeg"
+                                alt="Portrait of Marie Curie, pioneering physicist and chemist" loading="lazy"
+                                onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field">Physics &amp; Chemistry</p>
+                            <h3 id="curie-name">Marie Curie</h3>
+                            <p>Polish-French physicist and chemist who pioneered research on radioactivity.</p>
+                            <ul class="scientist-contributions" aria-label="Marie Curie's key contributions">
+                                <li>Pioneering research on radioactivity</li>
+                                <li>Discovered the elements Polonium and Radium</li>
+                                <li>First woman to win a Nobel Prize</li>
+                                <li>Only person to win Nobel Prizes in two different sciences</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Albert Einstein -->
+                    <article class="scientist-card" aria-labelledby="einstein-name">
+                        <div class="scientist-img-wrap">
+                            <img src="https://cdn.pixabay.com/photo/2024/04/08/18/23/ai-generated-8684145_1280.jpg"
+                                alt="Portrait of Albert Einstein, theoretical physicist" loading="lazy"
+                                onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field">Theoretical Physics</p>
+                            <h3 id="einstein-name">Albert Einstein</h3>
+                            <p>German-born theoretical physicist who developed the theory of relativity and made major
+                                contributions to modern physics.</p>
+                            <ul class="scientist-contributions" aria-label="Einstein's key contributions">
+                                <li>Special and General Theory of Relativity</li>
+                                <li>Famous equation: E = mc²</li>
+                                <li>Nobel Prize in Physics (1921) for the photoelectric effect</li>
+                                <li>Contributions to quantum mechanics and cosmology</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- C. V. Raman (Featured Prominently) -->
+                    <article class="scientist-card"
+                        style="border-color: rgba(168,85,247,0.5); box-shadow: var(--shadow-glow-violet);"
+                        aria-labelledby="raman-name">
+                        <div class="scientist-img-wrap">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.IZbVaaHYA-e75_CE_J5o7AHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt="Portrait of C. V. Raman, Indian physicist who discovered the Raman Effect"
+                                loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field" style="color: var(--color-violet-lt);">Physics — India's Nobel
+                                Laureate</p>
+                            <h3 id="raman-name">C. V. Raman ⭐</h3>
+                            <p>Indian physicist Chandrasekhara Venkata Raman made a landmark discovery in the study of
+                                light scattering.</p>
+                            <ul class="scientist-contributions" aria-label="C. V. Raman's key contributions">
+                                <li><strong style="color:var(--color-violet-lt);">Raman Effect</strong> — scattering of
+                                    light with a change in wavelength</li>
+                                <li>Nobel Prize in Physics (1930) — first Indian scientist to win</li>
+                                <li>Contributions to the study of optics and crystal dynamics</li>
+                                <li>Founded the Indian Journal of Physics</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Jagadish Chandra Bose -->
+                    <article class="scientist-card" aria-labelledby="bose-name">
+                        <div class="scientist-img-wrap" style="background: linear-gradient(135deg, #0c1f3f, #0f2448);">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.kFRd6yK2gsitwj-A6tUangHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt="Portrait of Jagadish Chandra Bose, Indian scientist in physics and plant biology"
+                                loading="lazy" onerror="this.onerror=null;this.style.display='none'">
+                        </div>
+                        <div class="scientist-body">
+                            <p class="scientist-field">Physics &amp; Plant Biology</p>
+                            <h3 id="bose-name">Jagadish Chandra Bose</h3>
+                            <p>Indian scientist who made pioneering contributions to both radio science and plant
+                                biology.</p>
+                            <ul class="scientist-contributions" aria-label="J. C. Bose's key contributions">
+                                <li>Pioneered research in radio and microwave optics</li>
+                                <li>Demonstrated that plants respond to stimuli</li>
+                                <li>Invented the crescograph to measure plant growth</li>
+                                <li>One of the first scientists to investigate radio waves in the GHz range</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON TABLE -->
+        <section class="section" aria-labelledby="sci-table-title">
+            <div class="container">
+                <span class="section-label">Reference</span>
+                <h2 class="section-title" id="sci-table-title">Scientists at a Glance</h2>
+                <p class="section-subtitle">A summary comparison of all six featured scientists.</p>
+
+                <div class="table-wrap">
+                    <table class="data-table"
+                        aria-label="Comparison table of famous scientists, their fields and contributions">
+                        <thead>
+                            <tr>
+                                <th scope="col">Scientist</th>
+                                <th scope="col">Field</th>
+                                <th scope="col">Famous Contribution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Isaac Newton</td>
+                                <td>Physics</td>
+                                <td>Laws of motion and universal gravitation</td>
+                            </tr>
+                            <tr>
+                                <td>Albert Einstein</td>
+                                <td>Physics</td>
+                                <td>Theory of relativity and E = mc²</td>
+                            </tr>
+                            <tr>
+                                <td>Marie Curie</td>
+                                <td>Chemistry / Physics</td>
+                                <td>Pioneering research on radioactivity</td>
+                            </tr>
+                            <tr>
+                                <td>Charles Darwin</td>
+                                <td>Biology</td>
+                                <td>Theory of evolution by natural selection</td>
+                            </tr>
+                            <tr>
+                                <td>C. V. Raman</td>
+                                <td>Physics</td>
+                                <td>Discovery of the Raman Effect</td>
+                            </tr>
+                            <tr>
+                                <td>Jagadish Chandra Bose</td>
+                                <td>Physics / Biology</td>
+                                <td>Research in radio waves and plant science</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOTIVATIONAL SECTION -->
+        <section class="quote-section" aria-label="Motivational section">
+            <div class="container">
+                <span class="section-label" style="color: var(--color-violet-lt);">Inspiration</span>
+                <p class="quote-text">Curiosity, persistence, and the courage to question are the qualities that all
+                    great scientists share. Every discovery begins with someone asking: <em>"Why does this happen — and
+                        how can we find out?"</em></p>
+                <p class="quote-author" style="margin-top:20px;">The path of science is open to all who are willing to
+                    explore it.</p>
+
+                <div style="margin-top:40px;">
+                    <div class="related-links" style="justify-content:center;">
+                        <a href="experiments.html" class="related-link">Try Experiments →</a>
+                        <a href="quiz.html" class="related-link">Test Your Knowledge →</a>
+                        <a href="space.html" class="related-link">Explore Space →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom:12px; display:inline-flex;">
+                        <div class="nav-atom" style="width:32px;height:32px;" aria-hidden="true"></div>
+                        <div class="nav-brand-text">
+                            <span class="nav-name">Science Explorer</span>
+                            <span class="nav-tagline">Discover. Explore. Understand.</span>
+                        </div>
+                    </a>
+                    <p>An educational website designed to make science accessible, engaging, and inspiring for every
+                        student.</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Subjects</p>
+                    <nav class="footer-links" aria-label="Subject links">
+                        <a href="physics.html">Physics</a>
+                        <a href="chemistry.html">Chemistry</a>
+                        <a href="biology.html">Biology</a>
+                        <a href="space.html">Space Science</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="footer-heading">Explore</p>
+                    <nav class="footer-links" aria-label="Explore links">
+                        <a href="scientists.html">Famous Scientists</a>
+                        <a href="experiments.html">Experiments</a>
+                        <a href="quiz.html">Science Quiz</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-deco" aria-hidden="true">
+                <div class="footer-atom"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Science Explorer. Built with HTML5 &amp; CSS3 for educational purposes.</p>
+                <!-- <p style="color: var(--color-text-muted);">Designed for college project demonstration.</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
